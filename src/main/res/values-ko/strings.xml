@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="banner_ad_unit_id">ca-app-pub-9698618209747076/5158372949</string>
+    <string name="app_name">매일매일 체중계</string>
+    <string name="toolbar_title">매일매일 체중계</string>
+    <string name="pref_toolbar_title">설정</string>
+    <string name="title_activity_settings">세팅</string>
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+
+    <!-- menu string -->
+    <string name="menu_input">입력</string>
+    <string name="menu_setting">설정</string>
+
+    <!-- ListView title -->
+    <string name="lv_title_date">날짜</string>
+    <string name="lv_title_weight">체중</string>
+    <string name="lv_title_exercise">운동</string>
+    <string name="lv_title_drink">음주</string>
+    <string name="lv_title_memo">메모</string>
+
+    <!-- Input Dialog -->
+    <string name="dialog_title">체중입력</string>
+    <string name="dialog_date">날짜</string>
+    <string name="dialog_weight">체중</string>
+    <string name="dialog_exercise">운동</string>
+    <string name="dialog_drink">음주</string>
+    <string name="dialog_memo">메모</string>
+    <string name="dialog_btn_cancel">취소</string>
+    <string name="dialog_btn_confirm">확인</string>
+    <string name="dialog_btn_edit">수정</string>
+
+    <!-- Message -->
+    <string name="msg_onemorepress">\'뒤로\' 버튼을 한번 더 눌러서 종료하세요</string>
+    <string name="delete_all_title">데이터 삭제</string>
+    <string name="delete_all_message">데이터가 모두 삭제 됩니다. 계속 하시겠습니까?</string>
+
+    <!-- Settings -->
+    <string name="set_title_set">설정</string>
+    <string name="set_title_info">정보</string>
+    <string name="set_auto_input_title">자동 입력창</string>
+    <string name="set_auto_input_message">어플 시작시 자동으로 입력창 열기</string>
+    <string name="set_delete_all_title">전체 삭제</string>
+    <string name="set_delete_all_message">전체 데이터를 삭제 합니다.</string>
+    <string name="set_information">정보</string>
+    <string name="set_version">버전 1.0.0</string>
+    <string name="set_version_date">2015년 11월 5일</string>
+
+    <!-- Upgrade Dialog -->
+    <string name="upgrade_title">매일매일 체중계</string>
+    <string name="upgrade_msg">새로운 버전이 나왔습니다. 업그레이드 하시겠습니까?</string>
+
+        <!-- Example General settings -->
+
+
+        <string name="pref_default_display_name">John Smith</string>
+
+        <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+        <string-array name="pref_example_list_titles">
+            <item>Always</item>
+            <item>When possible</item>
+            <item>Never</item>
+        </string-array>
+        <string-array name="pref_example_list_values">
+            <item>1</item>
+            <item>0</item>
+            <item>-1</item>
+        </string-array>
+
+        <!-- Example settings for Data & Sync -->
+        <string name="pref_header_data_sync">Data &amp; sync</string>
+
+        <string name="pref_title_sync_frequency">Sync frequency</string>
+        <string-array name="pref_sync_frequency_titles">
+            <item>15 minutes</item>
+            <item>30 minutes</item>
+            <item>1 hour</item>
+            <item>3 hours</item>
+            <item>6 hours</item>
+            <item>Never</item>
+        </string-array>
+        <string-array name="pref_sync_frequency_values">
+            <item>15</item>
+            <item>30</item>
+            <item>60</item>
+            <item>180</item>
+            <item>360</item>
+            <item>-1</item>
+        </string-array>
+
+        <string name="pref_title_system_sync_settings">System sync settings</string>
+
+        <!-- Example settings for Notifications -->
+        <string name="pref_header_notifications">Notifications</string>
+
+        <string name="pref_title_new_message_notifications">New message notifications</string>
+
+        <string name="pref_title_ringtone">Ringtone</string>
+        <string name="pref_ringtone_silent">Silent</string>
+
+        <string name="pref_title_vibrate">Vibrate</string>
+    </resources>
