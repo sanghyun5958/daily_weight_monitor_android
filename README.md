@@ -1,35 +1,177 @@
-# daily_weight_monitor_android
+# Screenshot - Migrating from old to new LMS platform
 ![screenshot_dailyweight](./screenshot_dailyweight.jpg)
 
-## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
+## The purpose of the project
 
-What things you need to install the software and how to install them
+To make the website more mobile-friendly and to handle website features automatically by upgrading to the latest LMS.
+
+
+
+## My part of the project
+
+* *Model-View-Controller (MVC) Design Pattern for PHP* - I developed the web applications based on MVC pattern.
+* *Front-end web UI Framework* -  I designed 
+* *Photoshop* -  Used to generate RSS Feeds 
+
+URL : http://wifiinfobank.unapcict.org
+
+
+## Programming code description
+### PHP MVC Framework - Controller
+
+```php
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+class Materials extends CI_Controller {
+	function __construct(){
+	  parent::__construct();
+        $this -> load -> database();
+        $this -> load -> model('board_m');
+        $this -> load -> helper(array('url', 'date'));
+
+	}
+	
+	function index(){
+	}
+	
+ 	public function _remap($method) {
+           // header include
+        	$this -> load -> view('header');
+ 
+        	if (method_exists($this, $method)) {
+         	   $this -> {"{$method}"}();
+        		}
+ 
+         // footer include
+      		$this -> load -> view('footer');
+    	}
+ 	
+	function training_module(){
+		$this->load->view('training_module');
+	}
+	function mobile_learning(){
+		$this->load->view('mobile_learning');
+	}
+		function dica(){
+		$this->load->view('dica');
+	}
+}
+?>
 
 ```
-Give examples
+
+
+### PHP MVC Framework - Model
+
+```php
+ 
+<?php
+if (!defined('BASEPATH'))
+    exit('No direct script access allowed');
+
+ 
+class Board_m extends CI_Model {
+    function __construct() {
+        parent::__construct();
+    }
+ 
+    function get_list($table = 'ci_board') {
+        $sql = "SELECT * FROM ".$table." ORDER BY board_id DESC";
+        $query = $this -> db -> query($sql);
+        $result = $query -> result();
+        // $result = $query->result_array();
+ 
+        return $result;
+    }
+ 
+}
+
 ```
 
-### Installing
 
-A step by step series of examples that tell you how to get a development env running
+### PHP MVC Framework - View (Bootstrap)
 
-Say what the step will be
+```html
+		<div class="col-lg-12 col-md-12 col-sm-12">
+    		  <p>WIFI Suhuruliya modules are available in audiobook for .... </p>
+     		 	......
+                   <div class="panel-group accordion" id="accordion">
+                       <div class="panel panel-default">
+                           <div class="panel-heading">
+                               <h4 class="panel-title">
+                                   <a data-toggle="collapse" data-parent="#accordion" href="#collapse01">
+                                       <i class="switch fa fa-plus"></i>
+                                      Language : English
+                                   </a>
+                               </h4>
+                           </div>
+                          <div id="collapse01" class="panel-collapse collapse">
+                               <div class="panel-body" ><b>Book 1 (...) 
+                             </b></div>  <div><audio controls>
+                              <source src="/static/lib/bootstrap/mp3/Book_English_1.mp3" type="audio/mpeg" />
+					......			
+				</div>
+                        </div>
+                    </div>
 
 ```
-Give the example
+xxx
+
+```html
+<div class="col-md-12">
+              <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                
+                <!-- Carousel items -->
+                <div class="carousel-inner carousel-zoom">
+                  <div class="active item">
+                    <img class="img-responsive" src="/static/lib/bootstrap/img/home-bg-1.jpg">
+                  </div>
+                  <div class="item">
+                    <img class="img-responsive" src="/static/lib/bootstrap/img/home-bg-2.jpg">
+                    <div class="carousel-caption"></div>
+                  </div>
+
 ```
 
-And repeat
+xxx
+
+```html
+<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    		<div class="container-fluid">
+    			
+    			<div class="navbar-header page-scroll">
+    				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+    					<span class="sr-only">Toggle navigation</span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    					<span class="icon-bar"></span>
+    				</button>
+    				<a href="/main/"><img src="/static/lib/bootstrap/img/logo.jpg"></a>
+    			</div>
+    			<!-- Collect the nav links, forms, and other content for toggling -->
+    			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    				<ul class="nav navbar-nav navbar-right ">
+    					<li>
+    						<a href="/main/">HOME</a>
+    					</li>
+    					<li class="dropdown">
+    						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ABOUT<span class="caret"></span></a>
+    						<ul class="dropdown-menu" role="menu">
+    							<li>
+    								<a href="/about/aboutus/">What is WIFI? </a>
+    							</li>
+    							<li class="divider"></li>
+    							<li>
+    								<a href="/about/aboutus_2/">What is WIFI InfoBank?</a>
+    							</li>
+    							<li class="divider"></li>
+    						</ul>
+    					</li>
 
 ```
-until finished
-```
 
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
@@ -55,11 +197,7 @@ Give an example
 
 Add additional notes about how to deploy this on a live system
 
-## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Contributing
 
@@ -84,5 +222,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc
-
 
