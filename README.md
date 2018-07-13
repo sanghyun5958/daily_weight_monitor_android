@@ -1,4 +1,4 @@
-# Screenshot - IBM Korea main software page and Mobile eDM.
+# Screenshot - IBM software main page and Mobile eDM.
 ![screenshot_dailyweight](./screenshot_dailyweight.jpg)
 
 
