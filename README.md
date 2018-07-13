@@ -11,8 +11,8 @@ To make the website more mobile-friendly and to handle website features automati
 
 ## My part of the project
 
-* **UI and UX design** - I tried (1) to organize the visual hierarchy of websites effectively. (2) to optimize the content of the website in an easy-to-browse method. (3) to clearly distinguish the areas of the pages on the website.
-* **Javascript Maintenance** -  I designed 
+* **UI and UX design** - I tried to (1) organize the visual hierarchy of websites effectively. (2) optimize the content of the website in an easy-to-browse method. (3) clearly distinguish the areas of the pages on the website.
+* **Javascript Maintenance** - I customized and maintained the existing plug-in on the website.
 * **standard web maintenance operations** -  I managed HTML updates, creation and formatting of new sections, general layouts.
 
 URL : http://wifiinfobank.unapcict.org
