@@ -11,9 +11,9 @@ To make the website more mobile-friendly and to handle website features automati
 
 ## My part of the project
 
-* *Model-View-Controller (MVC) Design Pattern for PHP* - I developed the web applications based on MVC pattern.
-* *Front-end web UI Framework* -  I designed 
-* *Photoshop* -  Used to generate RSS Feeds 
+* **UI and UX design** - I tried (1) to organize the visual hierarchy of websites effectively. (2) to optimize the content of the website in an easy-to-browse method. (3) to clearly distinguish the areas of the pages on the website.
+* **Javascript Maintenance** -  I designed 
+* **standard web maintenance operations** -  I managed HTML updates, creation and formatting of new sections, general layouts.
 
 URL : http://wifiinfobank.unapcict.org
 
