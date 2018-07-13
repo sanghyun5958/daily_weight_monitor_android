@@ -1,22 +1,21 @@
-# Screenshot - Migrating from old to new LMS platform
+# Screenshot - IBM Korea main software page and Mobile eDM.
 ![screenshot_dailyweight](./screenshot_dailyweight.jpg)
 
 
 
 ## The purpose of the project
 
-To make the website more mobile-friendly and to handle website features automatically by upgrading to the latest LMS.
+IBM Korea focused on 7 software products that were selected for the clean slate project that renovated main SW pages with User Experience Design and developing Mobile eDMs.
 
 
 
 ## My part of the project
 
-* **UI and UX design** - I tried to (1) organize the visual hierarchy of websites effectively. (2) optimize the content of the website in an easy-to-browse method. (3) clearly distinguish the areas of the pages on the website.
-* **Javascript Maintenance** - I customized and maintained the existing plug-in on the website.
-* **standard web maintenance operations** -  I managed HTML updates, creation and formatting of new sections, general layouts.
+* **design optimization** - I used analysis tools to analyze the reasons for high click-through rate to optimize the UI and UX of Renovated Software page.
+* **Mobile eDM development** - I used JavaScript/JQuery to develop more than 20 mobile eDM applications.
+* **re-building IBM Web Membership pages** -  I worked with Quality Assurance team on a daily basis in re-building IBM Web Membership pages, fixing the reported bugs/defects.
 
-URL : http://wifiinfobank.unapcict.org
-
+URL: https://www-01.ibm.com/software/kr/ 
 
 ## Programming code description
 ### PHP MVC Framework - Controller
