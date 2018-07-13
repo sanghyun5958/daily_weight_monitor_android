@@ -11,9 +11,9 @@ IBM Korea focused on 7 software products that were selected for the clean slate 
 
 ## My part of the project
 
-* **design optimization** - I used analysis tools to analyze the reasons for high click-through rate to optimize the UI and UX of Renovated Software page.
+* **Design optimization** - I used analysis tools to analyze the reasons for high click-through rate to optimize the UI and UX of Renovated Software page.
 * **Mobile eDM development** - I used JavaScript/JQuery to develop more than 20 mobile eDM applications.
-* **re-building IBM Web Membership pages** -  I worked with Quality Assurance team on a daily basis in re-building IBM Web Membership pages, fixing the reported bugs/defects.
+* **Re-building IBM Web Membership pages** -  I worked with Quality Assurance team on a daily basis in re-building IBM Web Membership pages, fixing the reported bugs/defects.
 
 URL: https://www-01.ibm.com/software/kr/ 
 
